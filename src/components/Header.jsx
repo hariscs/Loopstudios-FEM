@@ -1,36 +1,45 @@
+import logo from "../images/logo.svg";
+import "./Header.css";
+import mobileMenu from "../images/icon-hamburger.svg";
+
 const Header = () => {
-	return (
-		<header>
-			<img src='' alt='' className='logo' />
+  return (
+    <header className="header">
+      <div className="container">
+        <div className="header__flex">
+          <img src={logo} alt="" className="logo" />
 
-			<nav className='nav'>
-				<ul>
-					<li>
-						<a href='/'>About</a>
-					</li>
-					<li>
-						<a href='/'>Careers</a>
-					</li>
-					<li>
-						<a href='/'>Events</a>
-					</li>
-					<li>
-						<a href='/'>Products</a>
-					</li>
-					<li>
-						<a href='/'>Support</a>
-					</li>
-				</ul>
-			</nav>
+          <nav className="nav">
+            <ul className="nav__list">
+              <li className="nav__item">
+                <a href="/">About</a>
+              </li>
+              <li className="nav__item">
+                <a href="/">Careers</a>
+              </li>
+              <li className="nav__item">
+                <a href="/">Events</a>
+              </li>
+              <li className="nav__item">
+                <a href="/">Products</a>
+              </li>
+              <li className="nav__item">
+                <a href="/">Support</a>
+              </li>
+            </ul>
+          </nav>
+          <div className="mobileMenu">
+            <img src={mobileMenu} alt="menu" />
+          </div>
+        </div>
 
-			<div className='mobileMenu'></div>
-
-			{/* hero section */}
-			<div className='hero'>
-				<h1 className='heroTitle'>Immersive experiences that deliver</h1>
-			</div>
-		</header>
-	);
+        {/* hero section */}
+        <div className="hero">
+          <h1 className="heroTitle">Immersive experiences that deliver</h1>
+        </div>
+      </div>
+    </header>
+  );
 };
-
+// path is right tho
 export default Header;

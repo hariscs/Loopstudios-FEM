@@ -1,31 +1,49 @@
+:root {
+  --White: hsl(0, 0%, 100%);
+  --Black: hsl(0, 0%, 0%);
+  --Dark-Gray: hsl(0, 0%, 55%);
+  --Very-Dark-Gray: hsl(0, 0%, 41%);
+}
+
 *,
 *::before,
 *::after {
-	box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 body {
-	margin: 0;
-	font-family: 'Alata', sans-serif;
+  margin: 0;
+  font-family: "Alata", sans-serif;
+  font-size: 15px;
+  line-height: 1.5;
 }
 
 img {
-	max-width: 100%;
+  max-width: 100%;
 }
 
 h1,
 h2,
 h3 {
-	font-family: 'Josefin Sans', sans-serif;
+  font-family: "Josefin Sans", sans-serif;
+  margin: 0;
+  padding: 0;
 }
 
 a {
-	text-decoration: none;
+  text-decoration: none;
+  color: var(--White);
 }
 
 ul,
 li {
-	margin: 0;
-	padding: 0;
-	list-style: none;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.container {
+  margin: 0 auto;
+  width: 90%;
+  max-width: 100%;
 }

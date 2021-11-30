@@ -1,0 +1,41 @@
+.header {
+  background-color: red;
+  background-image: url("../images/desktop/image-hero.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  color: var(--White);
+  height: 90vh;
+}
+
+.header__flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2em 0;
+}
+
+.nav__list {
+  display: flex;
+  align-items: center;
+  gap: 1em;
+}
+
+.nav__list {
+  position: absolute;
+  top: 40px;
+  display: none;
+}
+
+.hero {
+  margin: 4em 0;
+}
+
+.heroTitle {
+  padding: 1em;
+  font-size: 3.5rem;
+  text-transform: uppercase;
+  border: 1px solid var(--White);
+  font-weight: 300;
+  line-height: 1;
+}
