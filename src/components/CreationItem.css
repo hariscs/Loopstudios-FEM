@@ -1,0 +1,17 @@
+.creation__item {
+  display: flex;
+  flex-direction: column;
+  margin: 1rem 0;
+}
+
+.creation__item .image-wrapper {
+  display: block;
+  position: relative;
+}
+
+.creation__item--text {
+  position: absolute;
+  /* bottom: 10; */
+  color: var(--White);
+  font-size: 1.5rem;
+}
