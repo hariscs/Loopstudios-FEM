@@ -18,8 +18,8 @@
 
 .about__info--subtitle {
   font-weight: 300;
-  font-size: 1.3rem;
-  width: 30ch;
+  font-size: 1.1rem;
+  /* width: 30ch; */
   margin-left: auto;
   margin-right: auto;
   color: var(--Dark-Gray);

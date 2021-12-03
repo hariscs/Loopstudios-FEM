@@ -1,8 +1,11 @@
 import logo from "../images/logo.svg";
 import "./Header.css";
 import mobileMenu from "../images/icon-hamburger.svg";
+// import { useState } from "react";
 
 const Header = () => {
+  // const [showNav, setShowNav] = useState(false);
+
   return (
     <header className="header">
       <div className="container">
