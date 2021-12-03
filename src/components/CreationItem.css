@@ -12,6 +12,6 @@
 .creation__item--text {
   position: absolute;
   /* bottom: 10; */
-  color: var(--White);
+  color: var(--White, white);
   font-size: 1.5rem;
 }
