@@ -1,6 +1,6 @@
 footer {
-  background-color: var(--Black);
-  color: var(--White);
+  background-color: var(--Black, black);
+  color: var(--White, white);
   padding: 2rem;
 }
 
