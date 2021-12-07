@@ -1,0 +1,30 @@
+.nav {
+  position: fixed;
+  top: 0;
+  left: 100%;
+  width: 100%;
+  height: 100%;
+  background-color: var(--Black, black);
+  z-index: 10;
+  padding: 100px 0 0 20px;
+}
+
+.nav.active {
+  transition: all 0.2s ease-in-out;
+  left: 0;
+}
+
+.nav__list {
+  display: flex;
+  flex-direction: column;
+}
+
+.nav__list > li {
+  padding: 10px;
+  font-size: 1.5rem;
+}
+
+.nav__list a {
+  font-weight: 300;
+  text-transform: uppercase;
+}

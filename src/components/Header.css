@@ -5,39 +5,25 @@
   background-position: center;
   background-size: cover;
   color: var(--White, white);
-  height: 90vh;
+  padding-bottom: 2em;
 }
 
 .header__flex {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 2em 0;
+  padding-bottom: 2em;
 }
 
-.nav__list {
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  gap: 1em;
-}
-
-.nav__list {
+.logo {
+  z-index: 15;
   position: absolute;
-  top: 40px;
-  display: none;
+  top: 20px;
 }
 
-.hero {
-  margin: 4em 0;
-  border: 1px solid white;
-}
-
-.heroTitle {
-  padding: 1em;
-  font-size: 3rem;
-  text-transform: uppercase;
-  /* border: 1px solid var(--White); */
-  font-weight: 300;
-  line-height: 1;
+.mobileMenu {
+  z-index: 15;
+  position: absolute;
+  right: 20px;
+  top: 20px;
 }

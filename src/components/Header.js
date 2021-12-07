@@ -1,10 +1,18 @@
+import { useState } from "react";
+
 import logo from "../images/logo.svg";
 import "./Header.css";
 import mobileMenu from "../images/icon-hamburger.svg";
-// import { useState } from "react";
+import closeMobileMenu from "../images/icon-close.svg";
+import Hero from "./Hero";
+import Navbar from "./Navbar";
 
 const Header = () => {
-  // const [showNav, setShowNav] = useState(false);
+  const [showNav, setShowNav] = useState(false);
+
+  function handleNavShow() {
+    setShowNav((prevState) => !prevState);
+  }
 
   return (
     <header className="header">
@@ -12,34 +20,20 @@ const Header = () => {
         <div className="header__flex">
           <img src={logo} alt="" className="logo" />
 
-          <nav className="nav">
-            <ul className="nav__list">
-              <li className="nav__item">
-                <a href="/">About</a>
-              </li>
-              <li className="nav__item">
-                <a href="/">Careers</a>
-              </li>
-              <li className="nav__item">
-                <a href="/">Events</a>
-              </li>
-              <li className="nav__item">
-                <a href="/">Products</a>
-              </li>
-              <li className="nav__item">
-                <a href="/">Support</a>
-              </li>
-            </ul>
-          </nav>
+          {/* navbar section */}
+          <Navbar onShowNav={showNav} />
+          {/* hamburger */}
           <div className="mobileMenu">
-            <img src={mobileMenu} alt="menu" />
+            <img
+              src={showNav ? closeMobileMenu : mobileMenu}
+              alt="menu"
+              onClick={handleNavShow}
+            />
           </div>
         </div>
 
         {/* hero section */}
-        <div className="hero">
-          <h1 className="heroTitle">Immersive experiences that deliver</h1>
-        </div>
+        <Hero />
       </div>
     </header>
   );
