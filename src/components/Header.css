@@ -1,0 +1,29 @@
+.header {
+  background-color: red;
+  background-image: url("../images/desktop/image-hero.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  color: var(--White, white);
+  padding-bottom: 2em;
+}
+
+.header__flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 2em;
+}
+
+.logo {
+  z-index: 15;
+  position: absolute;
+  top: 20px;
+}
+
+.mobileMenu {
+  z-index: 15;
+  position: absolute;
+  right: 20px;
+  top: 20px;
+}

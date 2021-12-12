@@ -1,0 +1,41 @@
+.creations {
+  /* display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; */
+
+  padding-bottom: 2rem;
+}
+
+.creations__header h2 {
+  font-size: 2.5rem;
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.creations__header--button {
+  background-color: transparent;
+  color: var(--Black, black);
+  text-align: center;
+  cursor: pointer;
+  border: 1px solid var(--Black, black);
+  font-size: 1.3rem;
+  padding: 0.5rem 2rem;
+  /* display: none; */
+  align-self: center;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+
+.creations__header--button:active,
+.creations__header--button:hover {
+  outline: none;
+}
+
+.creations__header--button:hover {
+  transition: all 0.3s ease-in-out;
+  background-color: var(--Black);
+  color: var(--White);
+}
